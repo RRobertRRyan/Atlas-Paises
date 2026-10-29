@@ -1,0 +1,72 @@
+
+/* Página inicial */
+.destaque {
+  margin: 40px 0;
+  padding: 40px 30px;
+  background-color: #ffffff;
+  border-left: 8px solid var(--terra);
+}
+
+.destaque h2 {
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+.destaque p {
+  max-width: 600px;
+}
+
+.colunas {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.caixa {
+  flex: 1;
+  min-width: 220px;
+  background-color: #ffffff;
+  border: 1px solid var(--borda);
+  padding: 20px;
+}
+
+.caixa h3 {
+  margin-top: 0;
+}
+
+.curiosidade {
+  background-color: #e8f1e1;
+  border-color: var(--terra);
+}
+
+/* Seções dos países */
+.pais {
+  background-color: #ffffff;
+  border: 1px solid var(--borda);
+  border-top: 4px solid var(--mar-claro);
+  padding: 20px 24px;
+  margin-bottom: 24px;
+}
+
+.pais h3 {
+  margin-top: 0;
+  font-size: 1.4rem;
+}
+
+.pais p {
+  margin: 6px 0;
+}
+
+/* Destaca o país quando ele é aberto pelo link interno */
+.pais:target {
+  border-top-color: var(--terra);
+  background-color: #f4f9f0;
+}
+
+.voltar {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+

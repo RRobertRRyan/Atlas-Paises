@@ -1,0 +1,53 @@
+
+/* Cabeçalho e menu */
+.topo {
+  background-color: var(--mar);
+  border-bottom: 5px solid var(--terra);
+}
+
+.topo .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  color: #ffffff;
+  margin: 16px 0;
+  font-size: 1.6rem;
+}
+
+.menu a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 18px;
+  padding: 6px 0;
+}
+
+.menu a:hover,
+.menu a.ativo {
+  border-bottom: 2px solid #ffffff;
+}
+
+/* ===== Rodapé ===== */
+.rodape {
+  background-color: var(--mar);
+  color: #ffffff;
+  text-align: center;
+  padding: 16px;
+}
+
+/* Celular */
+@media (max-width: 600px) {
+  .topo .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .menu a {
+    margin: 0 16px 0 0;
+  }
+  .destaque h2 {
+    font-size: 1.5rem;
+  }
+}

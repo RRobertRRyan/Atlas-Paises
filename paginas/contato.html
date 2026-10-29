@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atlas dos Países - Contato</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/componentes.css">
+  <link rel="stylesheet" href="../assets/css/paginas.css">
+</head>
+<body>
+
+  <header class="topo">
+    <div class="container">
+      <h1 class="logo">Atlas dos Países</h1>
+      <nav class="menu">
+        <a href="../index.html">Início</a>
+        <a href="paises.html">Países</a>
+        <a href="contato.html" class="ativo">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Sugira um país</h2>
+    <p>Quer ver outro país no atlas? Preencha o formulário abaixo.</p>
+
+    <!-- Formulário -->
+    <form class="formulario" action="#" method="post">
+
+      <label for="nome">Seu nome</label>
+      <input type="text" id="nome" name="nome" placeholder="Ex.: Maria Silva" required>
+
+      <label for="email">Seu e-mail</label>
+      <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+
+      <label for="pais">País sugerido</label>
+      <input type="text" id="pais" name="pais" placeholder="Ex.: Itália" required>
+
+      <label for="continente">Continente</label>
+      <select id="continente" name="continente">
+        <option value="america">América</option>
+        <option value="europa">Europa</option>
+        <option value="asia">Ásia</option>
+        <option value="africa">África</option>
+        <option value="oceania">Oceania</option>
+      </select>
+
+      <fieldset>
+        <legend>Você já visitou esse país?</legend>
+        <label class="opcao"><input type="radio" name="visitou" value="sim"> Sim</label>
+        <label class="opcao"><input type="radio" name="visitou" value="nao" checked> Não</label>
+      </fieldset>
+
+      <label for="mensagem">Por que esse país?</label>
+      <textarea id="mensagem" name="mensagem" rows="5" placeholder="Conte o que você acha interessante sobre ele"></textarea>
+
+      <button type="submit" class="botao">Enviar sugestão</button>
+    </form>
+  </main>
+
+  <footer class="rodape">
+    <p>Atlas dos Países &copy; 2026 - Trabalho de HTML e CSS</p>
+  </footer>
+
+</body>
+</html>
